@@ -1,0 +1,100 @@
+* , *::before , *::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background-image: url(building1.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.image{
+    width: 70px;
+    border-radius: 10px;
+    margin: .5em;
+}
+aside{
+
+    padding: .5em .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.644);
+
+}
+
+
+ul{
+    list-style: none;
+
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+
+}
+li, a{
+    padding: .8em;
+}
+.special{
+    background-color: tan;
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+main{
+    width: 100%;
+}
+
+h1{  
+    display: inline-block;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+}
+p{
+
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(240, 146, 6);
+    font-weight: bold;
+    /* line-height: .2em; */
+    margin-top: 1em;
+    
+}
+@media screen and (max-width:700px) {
+
+    body{
+           /* display: flex; */
+           flex-direction: column-reverse;
+           width: 100%;
+           justify-content: space-between;
+
+           
+    }
+
+    main{
+        min-height: 60vh;
+    }
+    aside{
+   
+        height: auto;
+        width: 100%;
+         
+    }
+    aside ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}

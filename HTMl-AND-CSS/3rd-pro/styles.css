@@ -1,0 +1,108 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #E54B4B;
+    position: relative;
+    padding: 1em 0;
+}
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+.logo{
+    float: left;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 700;
+
+}
+.navigation{
+    /* float: right; */
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: #464655;
+    /* height: 0px;
+    overflow: hidden; */
+
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation li{
+    border-bottom: 1px solid #575766;
+
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+  
+
+}
+.navigation li:last-child{
+    border-bottom: none;
+}
+.navigation a:hover,
+.navigation a:focus{
+    background-color: #E48363;
+    color: #464655;
+}
+/* navigation on and off */
+.navigation{
+    height: 0px;
+    overflow: hidden;
+}
+
+
+.menu-toggle {
+    /* background-color: black; */
+    padding: 1em;
+    position: absolute;
+    top: .70em;
+    right: .75em;
+    cursor: pointer;
+
+}
+.hamburger{
+    background-color: white;
+    height: 3px;
+    width: 1.85em;
+    border-radius: 7px;
+
+}
+.hamburger::before, 
+.hamburger::after{
+    content: '';
+    width: 1.85;
+    height: 3px;
+    background-color: white;
+    border-radius: 7px;
+    display: block;
+
+}
+
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
+.navigation-open{
+    height: auto;
+}

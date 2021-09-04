@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+}
+.container-nav{
+    margin-top: .4em;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+
+.logo{
+    width: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 .5em;
+}
+.row{
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    width: 100%;
+    text-align: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+   
+
+}
+li{
+    margin: 0.5em;
+    margin-left: .5em;
+    margin-right: 0;
+
+}
+a {
+    text-decoration: none;
+    padding: 1em 0;
+    padding-left: .7em;
+    
+}
+.image1{
+    margin-top: 1em;
+    text-align: center;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+.content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    
+}
+.content > *{
+    flex: 1 1 9em;
+    /* flex-basis: 100%; */
+}
+.col{
+    width: 100%;
+    margin: 1em;
+    text-align: center;
+    line-height: 1.4;
+}
+.para{
+    text-align: left;
+}
+h2{
+    font-size: 1.3rem;
+    margin: .5em 0;
+    max-block-size: 100%;
+}
+
+@media screen and (max-width:858px) {
+
+    .nav-bar{
+            
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          width: 100%;
+         align-items: flex-start;
+          margin-top: 1em;
+          
+    }
+    .it{
+        display: flex;
+        margin-bottom: .5em;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+   
+    .logo{
+        width: 15%;
+    }
+    h2{
+        margin-top: 1em;
+        font-size: 1.3rem;
+    }
+    a{
+        color: green;
+        text-transform: uppercase;
+        padding-right: 1em;
+        padding-left: 0;
+    }
+   ul{
+       flex-wrap: wrap;
+       padding: 0;
+   }
+   .container-nav{
+       margin: 0;
+   }
+}
+
+@media screen and (max-width:492px) {
+    
+
+    ul{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+    .logo{
+        width: 15%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 2em;
+    }
+    .image{
+        width: 100%;
+    }
+    .it{
+        text-align: center;
+    }
+    .row{
+        align-items: center;
+        justify-content: center;
+    }
+}

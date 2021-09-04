@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navigation</title>
+                                                         
+<!-- //Note: This is for version 3.5.0. You can change it here \/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">Syed muzakkir</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+
+<!-- BY USING JAVASCRIPT NAVIGATION TOGGLE -->
+<script>
+
+    $('.menu-toggle').click(function(){
+        $('.navigation').toggleClass('navigation-open');
+    })
+
+</script>
+
+</body>
+</html>
